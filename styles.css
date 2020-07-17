@@ -1,36 +1,99 @@
 /* --- box one ---- */
-.box-1 {
+.box {
     height: 100px;
     width: 100px;
-    background-color: lightcoral;
     position: absolute;
-    animation-name: litecoral;
-    animation-duration: 4s;
 }
-/* --- box two ---- */
-.box-2 {
-    height: 100px;
-    width: 100px;
+.box:hover{
+    border: 2px solid white;
+    transition: border .5s;
+}
+.box--top-right {
     background-color: lightblue;
-    position: absolute;
-    animation-name: liteblue;
-    animation-duration: 4s;
+    top: 0;
+    left: 0;
+    animation: box--top-right forwards 4s;
 }
-/* --- box three ---- */
-.box-3 {
-    height: 100px;
-    width: 100px;
-    background-color: lightgoldenrodyellow;
-    position: absolute;
-    animation-name: liteyellow;
-    animation-duration: 4s;
+.box--top-left {
+    background-color: lightcoral;
+    top: 0;
+    right: 0;
+    animation: box--top-left forwards 4s;
 }
-/* --- box four ---- */
-.box-4 {
-    height: 100px;
-    width: 100px;
+.box--bottom-right {
     background-color: lightgreen;
-    position: absolute;
-    animation-name: litegreen;
-    animation-duration: 4s;
+    bottom: 0;
+    right: 0;
+    animation: box--bottom-right forwards 4s;
 }
+.box--bottom-left {
+    background-color: lightgoldenrodyellow;
+    bottom: 0;
+    left: 0;
+    animation: box--bottom-left forwards 4s; 
+}
+   
+
+
+@keyframes box--top-right{
+    to{
+        top: 50%;
+        left: 50%;
+        background-color: black;
+        border-radius: 0 0 100px 0;
+    }
+  
+}
+
+@keyframes box--top-left{
+    to{
+        top: 50%;
+        right: 50%;
+        background-color: black;
+        border-radius: 0 0 0 100px;
+    }
+  
+}@keyframes box--bottom-right{
+    to{
+        bottom: 50%;
+        right: 50%;
+        background-color: black;
+        border-radius: 100px 0 0 0;
+    }
+  
+}@keyframes box--bottom-left{
+    to{
+        bottom: 50%;
+        left: 50%;
+        background-color: black;
+        border-radius: 0 100px 0 0;
+    }
+  
+}
+
+
+
+
+/* @keyframes mycoralse {
+    0% {background-color: lightcoral(240, 128, 128, 0.13); left: 0px; top: 0px; border-radius: 0 50% 0 0;}
+    25% {background-color: rgba(240, 128, 128, 0.13); left: 400px; top: 300px; border-radius: 0 50% 0 0;}
+    50% {background-color: rgba(240, 128, 128, 0.315); left: 400px; top: 300px; border-radius: 0 50% 0 0;}
+    75% {background-color: rgba(240, 128, 128, 0.562); left: 400px; top: 300x; border-radius: 0 50% 0 0;}
+    100% {background-color: rgba(240, 128, 128, 0.062); left: 400px; top: 300px; border-radius: 0 50% 0 0;}
+  
+}@keyframes mygreengrass {
+    0% {background-color: lightcoral(240, 128, 128, 0.13); left: 0px; top: 0px; border-radius: 0 50% 0 0;}
+    25% {background-color: rgba(240, 128, 128, 0.13); left: 400px; top: 300px; border-radius: 0 50% 0 0;}
+    50% {background-color: rgba(240, 128, 128, 0.315); left: 400px; top: 300px; border-radius: 0 50% 0 0;}
+    75% {background-color: rgba(240, 128, 128, 0.562); left: 400px; top: 300x; border-radius: 0 50% 0 0;}
+    100% {background-color: rgba(240, 128, 128, 0.062); left: 400px; top: 300px; border-radius: 0 50% 0 0;}
+  
+}@keyframes yellowrain {
+    0% {background-color: lightcoral(240, 128, 128, 0.13); left: 0px; top: 0px; border-radius: 0 50% 0 0;}
+    25% {background-color: rgba(240, 128, 128, 0.13); left: 400px; top: 300px; border-radius: 0 50% 0 0;}
+    50% {background-color: rgba(240, 128, 128, 0.315); left: 400px; top: 300px; border-radius: 0 50% 0 0;}
+    75% {background-color: rgba(240, 128, 128, 0.562); left: 400px; top: 300x; border-radius: 0 50% 0 0;}
+    100% {background-color: rgba(240, 128, 128, 0.062); left: 400px; top: 300px; border-radius: 0 50% 0 0;}
+  
+} */
+
