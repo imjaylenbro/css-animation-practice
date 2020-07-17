@@ -1,0 +1,36 @@
+/* --- box one ---- */
+.box-1 {
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;
+    position: absolute;
+    animation-name: litecoral;
+    animation-duration: 4s;
+}
+/* --- box two ---- */
+.box-2 {
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    position: absolute;
+    animation-name: liteblue;
+    animation-duration: 4s;
+}
+/* --- box three ---- */
+.box-3 {
+    height: 100px;
+    width: 100px;
+    background-color: lightgoldenrodyellow;
+    position: absolute;
+    animation-name: liteyellow;
+    animation-duration: 4s;
+}
+/* --- box four ---- */
+.box-4 {
+    height: 100px;
+    width: 100px;
+    background-color: lightgreen;
+    position: absolute;
+    animation-name: litegreen;
+    animation-duration: 4s;
+}
